@@ -1,12 +1,13 @@
 import { Component } from '@angular/core'
 
-
 @Component({
     selector: 'pm-products',
     templateUrl: 'app/products/product-list.component.html'
 })
 export class ProductListComponent   {
     pageTitle: string = 'Product List';
+    imageWith: number = 50;
+    imageMargin: number = 2;
     products: any[] = [
         {
             "productId": 2,
@@ -29,4 +30,5 @@ export class ProductListComponent   {
             "imageUrl": "http://openclipart.org/image/300px/svg_to_png/73/rejon_Hammer.png"
         }
     ];
+
 }
